@@ -163,6 +163,7 @@ section
     border-radius: 0.8em;
     border: none;
     cursor: pointer;
+    box-shadow: 0 16px 16px 2px hsla(245, 75%, 52%, 0.2);
 }
 .box .content .buttonBox button:first-child:hover
 {
