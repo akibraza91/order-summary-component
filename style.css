@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root
+{
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+    --white: hsl(0, 0%, 100%);
+
+    --font: "Red Hat Display", sans-serif;
+    --fontSize: 16px;
+}
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--font);
+    font-size: 1em;
+}
+main
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--paleBlue);
+}
+main picture
+{
+    position: relative;
+    width: 100%;
+}
+main picture img
+{
+    width: 100%;
+}
+section
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box
+{
+    position: relative;
+    width: 400px;
+    border-radius: 1em;
+    overflow: hidden;
+}
+.box .heroImg
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .heroImg img
+{
+    width: 100%;
+}
+.box .content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 2.5em;
+    background-color: var(--white);
+    gap: 1em;
+}
+.box .content h1
+{
+    color: var(--darkBlue);
+    font-weight: 900;
+}
+.box .content p
+{
+    text-align: center;
+    color: var(--desaturatedBlue);
+    font-weight: 500;
+}
+.box .content .plan-type
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 1em;
+    background-color: var(--veryPaleBlue);
+    border-radius: 0.5em;
+}
+.box .content .plan-type .plan
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+.box .content .plan-type .plan .imgbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .content .plan-type .plan .user-plan
+{
+    display: flex;
+    flex-direction: column;
+}
+.box .content .plan-type .plan .user-plan #bundle
+{
+    color: var(--darkBlue);
+    font-weight: 900;
+}
+.box .content .plan-type .plan .user-plan #bundle-price
+{
+    color: var(--desaturatedBlue);
+    font-weight: 500;
+}
+.box .content .plan-type a
+{
+    color: var(--brightBlue);
+    font-weight: 700;
+}
+.box .content .plan-type a:hover
+{
+    text-decoration: none;
+    opacity: 0.7;
+}
+.box .content .buttonBox
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 1em;
+}
+.box .content .buttonBox button:first-child
+{
+    padding: 1em 0;
+    background-color: var(--brightBlue);
+    color: var(--veryPaleBlue);
+    font-weight: 700;
+    font-family: var(--font);
+    border-radius: 0.8em;
+    border: none;
+    cursor: pointer;
+}
+.box .content .buttonBox button:first-child:hover
+{
+    opacity: 0.7;
+}
+.box .content .buttonBox button:last-child
+{
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-family: var(--font);
+    color: var(--desaturatedBlue);
+    margin-bottom: -0.5em;
+    cursor: pointer;
+}
+.box .content .buttonBox button:last-child:hover
+{
+    color: var(--darkBlue);
+}
+@media (max-width: 425px){
+    .box
+    {
+        width: 90%;
+    }
+}
